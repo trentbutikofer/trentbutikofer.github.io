@@ -11,7 +11,7 @@ body {
     color:#364039;
 }
 
-h1 {font-size: Arial;}
+h1 {font-family: Arial;}
 
 h2 {
     font-size: 20px;
@@ -32,7 +32,7 @@ header, footer, footer a {
 }
 
 header img {
-    width: /*  */;
+    width: 300px;
     height: auto;
     float: right;
 }
