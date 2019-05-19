@@ -67,7 +67,14 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {margin: 5px 10px;}
+nav ul li a {
+    margin: 5px 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+nav ul li:hover {background-color: #333e4d;}
 
 #navContainer:hover nav {display: block;}
 
