@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+html{
+    width: 75%;
+    margin: auto;
+}
+
+#headerWrapper {
+    background-color: #59748f;
+    color: white;
+    padding: 15px;
+}
+
+header {margin: 20px;}
+
+header h1{
+    font-size: 40px;
+    float: left;
+    margin: 0;
+}
+
+header h2 {
+    font-family: "Rock Salt";
+    font-size: 14px;
+    width: 400px;
+    line-height: 2;
+}
+
+header img {
+    margin: 0 40px;
+    width: 75px;
+}
+
+#titles {
+    width: 700px;
+    margin: auto;
+}
+
+#navButton {display: none;}
+
+#navContainer {
+    background-color: #4d637a;
+    width: 100%;
+    display: inline-block;
+    height: 60px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul {
+    width: 800px;
+    margin: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    margin: 20px 30px;
+}
+
+header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
+
+h1, #articleText h3 {font-family: "Questrial";}
+
+#weatherInfo p {
+    line-height: 2;
+    margin: 0 15px;
+}
+
+#summaryContainer img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#summaryContainer {
+    width: 100%;
+    margin: auto;
+}
+
+#summary {
+    width: 350px;
+    margin: 35px;
+    position: absolute;
+    z-index: 1;
+    color: #59748f;
+    background-color: white;
+}
+
+#summary h3 {
+    font-size: 30px;
+    margin: 10px 15px;
+}
+
+article {
+    width: 90%;
+    border: 1px solid #59748f;
+    padding: 15px;
+    font-size: 16px;
+    margin: 20px auto;
+    height: 225px;
+    color: #59748f;
+}
+
+#articleContent {
+    width: 750px;
+    margin: auto;
+}
+
+#articleText {
+    width: 400px;
+    float: left;
+}
+
+article img {
+    width: 300px;
+    float: right;
+}
+
+#contact {
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #59748f; 
+    color: white;
+}
+
+#map {
+    position: relative;
+    top: -200px;
+    float: right;
+}
+
+#contactDiv1 {margin: 20px;}
+
+footer p {line-height: 0.5;}
+
+#footerbar {
+    background-color: #333e4d;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+#footerbar p {
+    line-height: 1;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 1150px) {
+    nav ul li a {margin: 20px 15px;}
+    article img {
+        width: 200px;
+        float: left;
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    nav ul li a {
+        margin: 20px 5px;
+        font-size: 13px;
+    }
+    article img {clear: both;}
+    article {height: 360px;}
+    header h1 {font-size: 30px;}
+    header h2 {font-size: 10px;}
+    header img {width: 50px;}
+}

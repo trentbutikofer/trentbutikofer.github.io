@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+/*general styles*/
+
+html {
+    width: 380px;
+    margin: auto;
+}
+
+body {margin: 0;}
+
+/* header styles*/
+
+header, #articleText {color: #59748f;}
+
+#mainHeader {margin: 10px;}
+
+header h1 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+header h2 {
+    font-family: "Rock Salt";
+    font-size: 12px;
+    text-align: center;
+    line-height: 2;
+}
+
+header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
+
+h1, #navButton, #articleText h3 {font-family: "Questrial";}
+
+/*nav styles*/
+
+#navButton, nav {
+    background-color: #59748f;
+    color: white;
+}
+
+#navButton h4, #navButton, h1 {display: inline-block;}
+
+#navButton h4 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+#navWrapper {text-align: center;}
+
+#navContainer {
+    position: relative;
+    margin: 10px 0;
+    background-color: #59748f
+}
+
+nav {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    margin: 5px 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+nav ul li:hover {background-color: #333e4d;}
+
+#navContainer:hover nav {display: block;}
+
+/*info and summary styles*/
+
+#weatherInfo p {
+    line-height: 2;
+    margin: 0 15px;
+}
+
+#summaryContainer img {
+    position: relative;
+    width: 100%;
+}
+
+#summary {
+    width: 250px;
+    margin: 10px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+
+#summary h3 {
+    font-size: 30px;
+    margin: 10px 15px;
+}
+
+/*article styles*/
+
+#articleText h3 {font-size: 22px;}
+
+#articleText {
+    width: 325px;
+    margin: auto;
+}
+
+article img {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+/*footer styles*/
+
+#contact {
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #59748f; 
+    color: white;
+}
+
+#map {
+    display: block;
+    margin: auto;
+}
+
+#contactDiv1 {margin: 20px;}
+
+footer p {line-height: 0.5;}
+
+#footerbar {
+    background-color: #333e4d;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+#footerbar p {
+    line-height: 1;
+    font-size: 10px;
+}
