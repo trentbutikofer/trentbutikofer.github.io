@@ -63,9 +63,18 @@ nav ul li a {
     margin: 20px 30px;
 }
 
+nav ul li a:hover {color: black;}
+
+nav ul li a:active {font-weight: 1000;}
+
 header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
 
 h1, #articleText h3 {font-family: "Questrial";}
+
+.active {
+    font-weight: 1000;
+    text-decoration: underline;
+}
 
 #weatherInfo p {
     line-height: 2;
