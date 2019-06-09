@@ -6,45 +6,40 @@ html{
     width: 75%;
     margin: auto;
 }
-#headerWrapper {
+header {
+    display: flex;
+    flex-direction: column;
     background-color: #59748f;
     color: white;
-    padding: 15px;
 }
-header {margin: 20px;}
+#headerWrapper {
+    padding: 20px;
+}
 header h1{
     font-size: 40px;
-    float: left;
     margin: 0;
 }
 header h2 {
     font-family: "Rock Salt";
     font-size: 14px;
-    width: 400px;
     line-height: 2;
 }
-header img {
-    margin: 0 40px;
-    width: 75px;
-}
-#titles {
-    width: 700px;
-    margin: auto;
-}
 nav {	
+    display: flex;
     margin: 0 auto;	
     width: 100%; 
     background-color:#435166;	
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 .navigation { 
     list-style: none; 
-    text-align: center; 
     margin: 0;
 }
-.navigation li:first-child { display: block;}
+.navigation li:first-child { display: flex;}
 .navigation li { display: none;}
 .navigation a {	
-    display: block;	
     color: #fff; 
     padding: .75rem;	
     text-align: center;	
@@ -60,7 +55,7 @@ nav {
 @media only screen and (min-width: 32.5em) {
 .navigation li:first-child { display: none;	}
 .navigation li { 
-    display: inline-block; 
+    display: inline-block;
     margin-right: 1rem;}	
 }
 header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
@@ -91,9 +86,28 @@ h1, #articleText h3 {font-family: "Questrial";}
     color: #59748f;
     background-color: white;
 }
+#summary input {
+    width: 40px;
+}
 #summary h3 {
     font-size: 30px;
     margin: 10px 15px;
+}
+#weathercontainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#weathercontainer img {
+    width: 350px;
+    height: 250px;
+}
+#weathercontainer figure{
+    padding: 10px;
+    border: 1px solid #59748f;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    word-wrap: break-word;
 }
 article {
     width: 90%;

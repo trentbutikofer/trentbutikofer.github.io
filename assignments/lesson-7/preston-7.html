@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Official Weather Site for Southern Idaho">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/small-5.css">
-  <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="css/large-5.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/small-7.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="css/large-7.css">
   <script src="js/currentDate.js"></script>
   <script src="js/hamburger.js"></script>
+  <script src="js/windchill.js"></script>
   <title>The Weather Site</title>
 
 </head>
@@ -33,12 +34,12 @@
         <nav>
           <ul class="navigation">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="preston-7.html" title="Home">Home</a></li>
             <li><a href="#" title="About">Preston</a></li>
             <li><a href="#" title="Service">Soda Springs</a></li>
             <li><a href="#" title="History">Fish Haven</a></li>
             <li><a href="#" title="Contact">Storm Center</a></li>
-            <li><a href="#" title="Contact">Gallery</a></li>
+            <li><a href="gallery-7.html" title="Contact">Gallery</a></li>
           </ul>
         </nav>
       </div>
@@ -53,10 +54,10 @@
           <h3>Preston, Idaho</h3>
           <div id="weatherInfo">
             <p>Currently: Sunny</p>
-            <p>High: 76 &#176;F</p>
-            <p>Wind Chill: 78 &#176;F</p>
+            <p>Tempature: <input type="text" id="temp" onkeyup="windchill()"></p>
+            <p>Wind Speed: <input type="text" id="windspeed" onkeyup="windchill()"></p>
+            <p id="windchill">Wind Chill: </p>
             <p>Humidity: 69%</p>
-            <p>Wind Speed: 5 MPH</p>
           </div>
 
         </section>
@@ -64,7 +65,7 @@
           <source srcset="images/banner_small.jpg" media="(min-width: 100px) and (max-width: 800px)">
           <source srcset="images/banner_large.jpeg" media="(min-width: 801px)">
           <img src="images/banner_small.jpg" alt="Weather Banner">
-          </picture>
+        </picture>
       </div>
       
       <article>

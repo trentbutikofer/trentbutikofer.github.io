@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+/*general styles*/
+
+html {
+    width: 380px;
+    margin: auto;
+}
+body {margin: 0;}
+
+/* header styles*/
+
+header, #articleText {color: #59748f;}
+#mainHeader {margin: 10px;}
+header h1 {
+    font-size: 30px;
+    margin: 10px;
+}
+header h2 {
+    font-family: "Rock Salt";
+    font-size: 12px;
+    text-align: center;
+    line-height: 2;
+}
+header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
+h1, #navButton, #articleText h3 {font-family: "Questrial";}
+
+/*nav styles*/
+
+nav {	
+    margin: 0 auto;	
+    width: 100%; 
+    background-color:#435166;	
+}
+.navigation { 
+    list-style: none; 
+    text-align: center; 
+    margin: 0;
+}
+.navigation li:first-child { display: block;}
+.navigation li { display: none;}
+.navigation a {	
+    display: block;	
+    color: #fff; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+    margin: 0;
+    width: 300px;
+}
+.navigation a:hover {	
+    color: #000; 
+    background-color: #fff; 
+    font-weight: 700;	
+}
+.responsive li { display: block; }
+@media only screen and (min-width: 33em) {
+.navigation li:first-child { display: none;	}
+.navigation li { 
+    display: inline-block; 
+    margin-right: 1rem;}	
+}
+
+/*info and summary styles*/
+
+#weatherInfo p {
+    line-height: 2;
+    margin: 0 15px;
+}
+#summaryContainer img {
+    position: relative;
+    width: 100%;
+}
+#summary {
+    width: 250px;
+    margin: 10px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+#weathercontainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#weathercontainer img {
+    width: 300px;
+    height: 175px;
+}
+#weathercontainer figure{
+    padding: 10px;
+    border: 1px solid #59748f;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    word-wrap: break-word;
+    width: 300px;
+}
+#summary input {
+    width: 40px;
+}
+#summary h3 {
+    font-size: 30px;
+    margin: 10px 15px;
+}
+/*article styles*/
+
+#articleText h3 {font-size: 22px;}
+#articleText {
+    width: 325px;
+    margin: auto;
+}
+article img {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+/*footer styles*/
+
+#contact {
+    padding: 10px;
+    margin: 10px;
+}
+footer {
+    background-color: #59748f; 
+    color: white;
+}
+#map {
+    display: block;
+    margin: auto;
+}
+#contactDiv1 {margin: 20px;}
+footer p {line-height: 0.5;}
+#footerbar {
+    background-color: #333e4d;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+#footerbar p {
+    line-height: 1;
+    font-size: 10px;
+}
