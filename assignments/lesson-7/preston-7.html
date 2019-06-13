@@ -9,10 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/small-7.css">
   <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="css/large-7.css">
-  <script src="js/currentDate.js"></script>
-  <script src="js/hamburger.js"></script>
-  <script src="js/windchill.js"></script>
-  <title>The Weather Site</title>
+  <title>Idaho Weather - Preston</title>
 
 </head>
 
@@ -22,28 +19,24 @@
       <div id="headerWrapper">
         <div id="titles">
         <div id="mainHeader">
-          <img src="images/icon.png" alt="Weather Icon">
-          <h1>THE WEATHER SITE</h1>
+           <img src="images/icon.png" alt="Weather Icon">
+          <h1>IDAHO WEATHER</h1>
        </div>
       <h2 id="motto">"Wherever you go, no matter what the weather, always bring your own sunshine."</h2>
       </div>
       </div>
-      <div id="navContainer">
 
-      <div id="navWrapper">
         <nav>
           <ul class="navigation">
-            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="preston-7.html" title="Home">Home</a></li>
-            <li><a href="#" title="About">Preston</a></li>
-            <li><a href="#" title="Service">Soda Springs</a></li>
-            <li><a href="#" title="History">Fish Haven</a></li>
-            <li><a href="#" title="Contact">Storm Center</a></li>
-            <li><a href="gallery-7.html" title="Contact">Gallery</a></li>
+            <li><a href="#"" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
           </ul>
         </nav>
-      </div>
-      </div>
 
     </header>
     <main>
@@ -54,8 +47,8 @@
           <h3>Preston, Idaho</h3>
           <div id="weatherInfo">
             <p>Currently: Sunny</p>
-            <p>Tempature: <input type="text" id="temp" onkeyup="windchill()"></p>
-            <p>Wind Speed: <input type="text" id="windspeed" onkeyup="windchill()"></p>
+            <p>Tempature: <span id="temp">91</span></p>
+            <p>Wind Speed: <span id="windspeed">5</span></p>
             <p id="windchill">Wind Chill: </p>
             <p>Humidity: 69%</p>
           </div>
@@ -103,6 +96,10 @@
       </div>
 
     </footer>
+
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
 
 </body>
 

@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 
-/*general styles*/
-
-html {
-    width: 380px;
-    margin: auto;
-}
 body {margin: 0;}
-
-/* header styles*/
-
-header, #articleText {color: #59748f;}
-#mainHeader {margin: 10px;}
+header {
+    background-color: #59748f;
+    color: white;
+}
+#mainHeader {
+    margin: 10px;
+    padding: 10px;
+}
+#mainHeader img {
+    width: 30px;
+    float: left;
+    margin: 10px 0;
+}
 header h1 {
     font-size: 30px;
-    margin: 10px;
+    margin: 0 10px;
 }
 header h2 {
     font-family: "Rock Salt";
@@ -26,18 +28,10 @@ header h2 {
 }
 header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
 h1, #navButton, #articleText h3 {font-family: "Questrial";}
-
-/*nav styles*/
-
-nav {	
-    margin: 0 auto;	
-    width: 100%; 
-    background-color:#435166;	
-}
+nav {background-color:#435166;}
 .navigation { 
-    list-style: none; 
     text-align: center; 
-    margin: 0;
+    margin: 0 -40px;
 }
 .navigation li:first-child { display: block;}
 .navigation li { display: none;}
@@ -45,10 +39,7 @@ nav {
     display: block;	
     color: #fff; 
     padding: .75rem;	
-    text-align: center;	
     text-decoration: none;
-    margin: 0;
-    width: 300px;
 }
 .navigation a:hover {	
     color: #000; 
@@ -62,9 +53,6 @@ nav {
     display: inline-block; 
     margin-right: 1rem;}	
 }
-
-/*info and summary styles*/
-
 #weatherInfo p {
     line-height: 2;
     margin: 0 15px;
@@ -116,9 +104,6 @@ article img {
     margin: auto;
     display: block;
 }
-
-/*footer styles*/
-
 #contact {
     padding: 10px;
     margin: 10px;
