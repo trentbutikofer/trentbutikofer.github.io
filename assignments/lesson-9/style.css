@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+    width: 900px;
+    margin: auto;
+}
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+header p {
+    text-align: center;
+    font-weight: bold;
+}
+article h2 {font-family: "Oswald", sans-serif;}
+article {
+    width: 300px;
+    float: left;
+}
+body {font-family: "Open Sans", sans-serif;}
