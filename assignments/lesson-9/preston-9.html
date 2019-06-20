@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Weather Site for Southern Idaho">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/small-9.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="css/large-9.css">
+  <title>Idaho Weather - Preston</title>
+
+</head>
+
+<body>
+  
+    <header> 
+      <div id="headerWrapper">
+        <div id="titles">
+        <div id="mainHeader">
+           <img src="images/icon.png" alt="Weather Icon">
+          <h1>IDAHO WEATHER</h1>
+       </div>
+      <h2 id="motto">"Wherever you go, no matter what the weather, always bring your own sunshine."</h2>
+      </div>
+      </div>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="#"" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+          </ul>
+        </nav>
+
+    </header>
+    <main>
+
+      <div id="summaryContainer">
+        <section id="summary">
+
+          <h3>Preston, Idaho</h3>
+          <div id="weatherInfo">
+            <p>Currently: Sunny</p>
+            <p>Tempature: <span id="temp">91</span></p>
+            <p>Wind Speed: <span id="windspeed">5</span></p>
+            <p id="windchill">Wind Chill: </p>
+            <p>Humidity: 69%</p>
+          </div>
+
+        </section>
+        <picture>
+          <source srcset="images/banner_small.jpg" media="(min-width: 100px) and (max-width: 800px)">
+          <source srcset="images/banner_large.jpeg" media="(min-width: 801px)">
+          <img src="images/banner_small.jpg" alt="Weather Banner">
+        </picture>
+      </div>
+      
+      <article>
+        <div id="articleContent">
+        <div id="articleText">
+          <h3>Idaho Falls Water Conservation</h3>
+          <p>Water is Idaho’s most valuable natural resource.  You can make a big impact on water conservation by doing a lot of little things. Things like turning the water off while you brush your teeth, fixing small leaks in your faucets, or changing out old and inefficient fixtures.  Looking for little things around the house can have big impact on the environment.</p>
+        </div>
+        <source srcset="images/waterconservation_small.jpg" media="(min-width: 100px) and (max-width: 800px)">
+        <source srcset="images/waterconservation_large.jpg" media="(min-width: 801px)">
+        <img src="images/waterconservation_small.jpg" alt="Water Conservation">
+      </div>
+      </article>
+
+    </main>
+
+    <footer>
+
+      <div id="contact">
+
+        <div id="contactDiv1">
+          <h4>Idaho Weather</h4>
+          <p>30 N 1st E</p>
+          <p>Preston, ID 83263</p>
+          <p><img src="images/phone.jpg" alt="Phone Icon">999.999.999</p>
+          <p><img src="images/email.jpg" alt="Email Icon">theweathersite@tws.com</p>
+        </div>
+
+      </div>
+      
+      <img src="images/map.png" alt="Southeastern Idaho Map" id="map">
+      <div id="footerbar">
+        <p>@2020 The Weather Site | Attributions | Trent Butikofer</p>
+        <p id="date"></p>
+      </div>
+
+    </footer>
+
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+
+</html>
