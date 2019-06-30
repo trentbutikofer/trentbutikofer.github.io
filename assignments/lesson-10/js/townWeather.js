@@ -1,7 +1,7 @@
 window.onload = getTownData();
 window.onload = getForecastData();
 function getTownData() {
-      var requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=cfa52b8f38c093f9979d5f536f241c5d';
+      var requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=cfa52b8f38c093f9979d5f536f241c5d';
           var request = new XMLHttpRequest();
           request.open('GET', requestURL);
           request.responseType = 'json';
@@ -13,7 +13,7 @@ function getTownData() {
       }
 }
 function getForecastData() {
-    var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=cfa52b8f38c093f9979d5f536f241c5d';
+    var requestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=cfa52b8f38c093f9979d5f536f241c5d';
           var request = new XMLHttpRequest();
           request.open('GET', requestURL);
           request.responseType = 'json';
