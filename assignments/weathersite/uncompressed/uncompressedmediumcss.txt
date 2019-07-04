@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #59748f;
+    color: white;
+}
+#headerWrapper {padding: 40px;}
+header h1{
+    font-size: 40px;
+    margin: 0;
+}
+header h2 {
+    font-family: "Rock Salt";
+    font-size: 14px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+nav {	
+    display: flex;
+    margin: 0 auto;	
+    width: 100%; 
+    background-color:#435166;	
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.navigation a {	
+    color: #fff; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+    margin: 0;
+}
+.navigation a:hover {	
+    color: #000; 
+    background-color: #fff; 
+    font-weight: 700;	
+}
+.responsive li { display: block; }
+@media only screen and (min-width: 32.5em) {
+.navigation li:first-child { display: none;	}
+.navigation li { 
+    display: inline-block;
+    margin-right: 1rem;	
+}
+header, #weatherInfo, #contact, #summary h3, #articleText p {font-family: 'Roboto';}
+#mainHeader img {
+    float: left;
+    padding: 0 30px;
+}
+h1, #articleText h3 {font-family: "Questrial";}
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#weathercontainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+}
+#weathercontainer img {
+    width: 250px;
+    height: 150px;
+}
+#weathercontainer div{
+    padding: 10px;
+    border: 1px solid #59748f;
+    word-wrap: break-word;
+    width: 250px;
+    margin: 15px;
+}
+#weathercontainer picture:hover {
+    box-shadow: 5px 5px 5px #d3d3d3;
+}
+#contact {
+    padding: 10px;
+    margin: 10px;
+}
+form {
+    border: 1px solid #59748F;
+    margin: 55px auto;
+    width: 600px;
+    padding: 55px;
+    font-family: 'Roboto';
+}
+#thanks {
+    width: 200px;
+    height: 100px;
+    margin: 55px auto;
+    font-size: 25px;
+}
+input, datalist, select, textarea {margin: 8px;}
+form h4 {
+    text-align: center;
+    font-size: 30px;
+}
+form h4, h4 {
+    color: #59748F;
+    font-family: "Questrial"
+}
+footer {
+    background-color: #59748f; 
+    color: white;
+    margin: auto;
+    clear: both;
+}
+#map {
+    position: relative;
+    top: -200px;
+    float: right;
+}
+#contactDiv1 {margin: 20px;}
+footer p {line-height: 0.5;}
+#footerbar {
+    background-color: #333e4d;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+#footerbar p {
+    line-height: 1;
+    font-size: 14px;
+}
+@media only screen and (max-width: 972px) {
+    #weathercontainer {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 745px) {
+    form {
+        margin: 30px auto;
+        width: 400px;
+        padding: 30px;
+    }
+    #thanks {
+        margin: 30px auto;
+    }
+    form h4 {
+        font-size: 20px;
+    }
+}

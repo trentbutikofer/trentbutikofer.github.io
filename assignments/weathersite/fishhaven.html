@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Official Weather Site for Southern Idaho">
+  <meta name="keywords" content="weather,Idaho,United States,Fish Haven,forecast,temperature">
+  <meta name="author" content="Trent Butikofer">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/small.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="css/large.css">
+  <title>Idaho Weather - Fish Haven</title>
+
+</head>
+
+<body>
+  
+    <header> 
+      <div id="headerWrapper">
+        <div id="titles">
+        <div id="mainHeader">
+           <img src="images/icon.png" alt="Weather Icon">
+           <a href="index.html"><h1>IDAHO WEATHER</h1></a>
+       </div>
+      <h2 id="motto">"Wherever you go, no matter what the weather, always bring your own sunshine."</h2>
+      </div>
+      </div>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="#"" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+
+    </header>
+    <main>
+
+      <div id="summaryContainer">
+        <section id="summary">
+
+          <h3 id="title">Fish Haven, Idaho</h3>
+          <div id="weatherInfo">
+            <p>Currently: <span id="condition"></span></p>
+            <p>Tempature: <span id="temp"></span></p>
+            <p>Wind Speed: <span id="windspeed"></span></p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+          </div>
+
+        </section>
+        <picture>
+          <source srcset="images/banner_small.jpg" media="(min-width: 100px) and (max-width: 800px)">
+          <source srcset="images/banner_large.jpeg" media="(min-width: 801px)">
+          <img src="images/banner_small.jpg" alt="Weather Banner">
+        </picture>
+      </div>
+
+      <div id="fiveDay">
+        <h4>Five Day Forecast</h4>
+        <table>
+          <tr id="days">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr id="forecast">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      
+      <div id="event">
+      </div>
+      
+      <article>
+        <div id="articleContent">
+        <div id="articleText">
+          <h3>Idaho Falls Water Conservation</h3>
+          <p>Water is Idaho’s most valuable natural resource.  You can make a big impact on water conservation by doing a lot of little things. Things like turning the water off while you brush your teeth, fixing small leaks in your faucets, or changing out old and inefficient fixtures.  Looking for little things around the house can have big impact on the environment.</p>
+        </div>
+        <source srcset="images/waterconservation_small.jpg" media="(min-width: 100px) and (max-width: 800px)">
+        <source srcset="images/waterconservation_large.jpg" media="(min-width: 801px)">
+        <img src="images/waterconservation_small.jpg" alt="Water Conservation">
+      </div>
+      </article>
+
+    </main>
+
+    <footer>
+
+      <div id="contact">
+
+        <div id="contactDiv1">
+          <h4>Idaho Weather</h4>
+          <p>30 N 1st E</p>
+          <p>Preston, ID 83263</p>
+          <p><img src="images/phone.jpg" alt="Phone Icon">999.999.999</p>
+          <p><img src="images/email.jpg" alt="Email Icon">theweathersite@tws.com</p>
+        </div>
+
+      </div>
+      
+      <img src="images/map.png" alt="Southeastern Idaho Map" id="map">
+      <div id="footerbar">
+        <p>@2020 The Weather Site | Attributions | Trent Butikofer</p>
+        <p id="date"></p>
+        <p>Data provided by https://openweathermap.org/</p>
+      </div>
+
+    </footer>
+
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/townWeather3.js"></script>
+    <script src="js/event.js"></script>
+
+</body>
+
+</html>
