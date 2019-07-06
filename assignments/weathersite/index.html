@@ -73,60 +73,72 @@
           </div>
     
         </footer>
-    
         <script src="js/currentDate.js"></script>
         <script src="js/hamburger.js"></script>
-
         <script>
-
           var header = document.querySelector('main');
-    
           var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
           var request = new XMLHttpRequest();
           request.open('GET', requestURL);
           request.responseType = 'json';
           request.send();
-    
           request.onload = function() {
             var weatherInfo = request.response;
             display(weatherInfo);
           }
-    
           function display(jsonObj) {
-
             var main = document.getElementById("townsDiv");
             var towns = jsonObj['towns'];
-          
-            for (var i = 0; i < 3; i++) {
+            for (let x = 0; x < 3; x++) {
               var article = document.createElement('article');
                 article.classList.add("town");
               var img = document.createElement("img");
-                img.src = "images/town" + [i + 1] + ".jpg";
               var h5 = document.createElement('h5');
               var motto = document.createElement('p');
                 motto.classList.add("motto");
               var yearFounded = document.createElement('p');
               var population = document.createElement('p');
               var rainFall = document.createElement('p');
-    
-              h5.textContent = towns[i].name;
-              motto.textContent = towns[i].motto;
-              yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
-              population.textContent = "Population: " + towns[i].currentPopulation;
-              rainFall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall + "''";
-    
               article.appendChild(h5);
               article.appendChild(motto);
               article.appendChild(yearFounded);
               article.appendChild(population);
               article.appendChild(rainFall);
               article.appendChild(img);
-    
               main.appendChild(article);
-
+            }
+            for (let y = 0; y < main.children.length; y++) {
+              var townDiv = main.children[y];
+              if (y == 0) {
+                for (let z = 0; z < townDiv.children.length; z++) {
+                  townDiv.children[0].textContent = towns[1].name;
+                  townDiv.children[1].textContent = towns[1].motto;
+                  townDiv.children[2].textContent = "Year Founded: " + towns[1].yearFounded;
+                  townDiv.children[3].textContent = "Population: " + towns[1].currentPopulation;
+                  townDiv.children[4].textContent = "Rainfall: " + towns[1].averageRainfall + "''";
+                  townDiv.children[5].src = "images/fishhaven_large.jpg";
+                }
+              } else if (y == 1) {
+                for (let z = 0; z < townDiv.children.length; z++) {
+                  townDiv.children[0].textContent = towns[5].name;
+                  townDiv.children[1].textContent = towns[5].motto;
+                  townDiv.children[2].textContent = "Year Founded: " + towns[5].yearFounded;
+                  townDiv.children[3].textContent = "Population: " + towns[5].currentPopulation;
+                  townDiv.children[4].textContent = "Rainfall: " + towns[5].averageRainfall + "''";
+                  townDiv.children[5].src = "images/sodasprings_large.jpg";
+                }
+              } else if (y == 2) {
+                for (let z = 0; z < townDiv.children.length; z++) {
+                  townDiv.children[0].textContent = towns[4].name;
+                  townDiv.children[1].textContent = towns[4].motto;
+                  townDiv.children[2].textContent = "Year Founded: " + towns[4].yearFounded;
+                  townDiv.children[3].textContent = "Population: " + towns[4].currentPopulation;
+                  townDiv.children[4].textContent = "Rainfall: " + towns[4].averageRainfall + "''";
+                  townDiv.children[5].src = "images/waterconservation_large.jpg";
+                }
+              }
             }
           }
-    
         </script>
 
 </body>
