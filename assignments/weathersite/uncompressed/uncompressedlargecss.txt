@@ -222,6 +222,7 @@ table {
 footer {
     background-color: #59748f; 
     color: white;
+    margin-top: 50px;
 }
 #map {
     position: relative;
