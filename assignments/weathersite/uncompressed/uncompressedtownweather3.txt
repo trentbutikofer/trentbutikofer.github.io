@@ -53,12 +53,16 @@ function displayForecastInfo(forecastInfo) {
         var weather = forecasts[y][1];
         if (weather.match("clear")) {
             icon.src = "images/sun.jpg";
+            icon.alt = "Sun";
         } else if (weather.match("clouds")) {
             icon.src = "images/clouds.png";
+            icon.alt = "Clouds";
         } else if ((weather.match("rain") || (weather.match("thunderstorm")) || (weather.match("mist")))) {
             icon.src = "images/rain.png";
+            icon.alt = "Rain";
         } else if (weather.match("snow")) {
             icon.src = "images/snow.png";
+            icon.alt = "Snow";
         }
         forecastIndex.appendChild(icon);
     }
