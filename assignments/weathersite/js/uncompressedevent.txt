@@ -1,0 +1,20 @@
+function getData() {
+    var e = new XMLHttpRequest;
+    e.open("GET", "https://byui-cit230.github.io/weather/data/towndata.json"), e.responseType = "json", e.send(), e.onload = function() {
+        display(e.response)
+    }
+}
+
+function display(e) {
+    var t = document.getElementById("event"),
+        n = document.createElement("p");
+    if (document.title.match("Preston")) var o = 4;
+    else if (document.title.match("Soda Springs")) o = 5;
+    else if (document.title.match("Fish Haven")) o = 1;
+    for (let t = 0; t < e.towns[o].events.length; t++) {
+        var a = e.towns[o].events[t];
+        n.innerHTML += a + "<br>"
+    }
+    t.appendChild(n)
+}
+window.onload = getData();
