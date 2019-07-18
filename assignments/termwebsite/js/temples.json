@@ -1,0 +1,107 @@
+[
+    {
+        "name": "The Salt Lake City Temple",
+        "city": "Salt Lake City",
+        "state": "Utah",
+        "address": "50 N West Temple",
+        "phone": "(801) 240-2640",
+        "email": "contact@templesquarehospitality.com",
+        "closure": [
+            {
+                "date": "2 July 2019 - 15 July 2019"
+            }
+        ],
+        "history":
+            {
+                "opened": "April 6, 1893",
+                "architect": "Truman O. Angell"
+            }
+    },
+    {
+        "name": "The Hawaii, Laie Temple",
+        "city": "Laie",
+        "state": "Hawaii",
+        "address": "55-600 Naniloa Loop",
+        "phone": "(808) 293-2427",
+        "email": "VCHawaii@ChurchofJesusChrist.org",
+        "closure": [
+            {
+                "date": "2 July 2019 - 15 July 2019"
+            },
+            {
+                "date": "4 October 2019 - 5 October 2019"
+            },
+            {
+                "date": "27 November 2019 - 28 November 2019"
+            },
+            {
+                "date": "24 December 2019 - 25 December 2019"
+            },
+            {
+                "date": "27 December 2019 - 28 December 2019"
+            },
+            {
+                "date": "30 December 2019 - 13 Janruary 2020"
+            }
+        ],
+        "history":
+            {
+                "opened": "Janruary 23, 2000",
+                "architect": "Hyrum Pope"
+            }
+    },
+    {
+        "name": "The Freiberg, Germany Temple",
+        "city": "Freiberg",
+        "state": "Germany",
+        "address": "Hainichener Str. 64, 09599",
+        "phone": "(49) 3731-35960",
+        "email": "",
+        "closure": [
+            {
+                "date": "9 September 2019 - 23 September 2019"
+            },
+            {
+                "date": "5 October 2019"
+            },
+            {
+                "date": "24 December 2019 - 26 December 2019"
+            },
+            {
+                "date": "31 December 2019"
+            }
+        ],
+        "history":
+            {
+                "opened": "June 29, 1985",
+                "architect": "Emil Baer Fetzer"
+            }
+    },
+    {
+        "name": "The Mexico, Tijuana Temple",
+        "city": "Tijuana",
+        "state": "Mexico",
+        "address": "Paseo Del Rio 6832, Esquina Campestre Oriente",
+        "phone": "(52) 664-969-2690",
+        "email": "",
+        "closure": [
+            {
+                "date": "5 October 2019"
+            },
+            {
+                "date": "17 November 2019 - 2 December 2019"
+            },
+            {
+                "date": "24 December 2019 - 25 December 2019"
+            },
+            {
+                "date": "31 December 2019"
+            }
+        ],
+        "history":
+            {
+                "opened": "December 13, 2015",
+                "architect": "Wallace Cooper"
+            }
+    }
+]

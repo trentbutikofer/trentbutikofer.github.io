@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Inn and Suites | Reservations</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/smallstyles.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 900px) and (min-width: 600px)" href="css/mediumstyles.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 900px)" href="css/largestyles.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="pagetitles">
+        <h1>RESERVATIONS</h1>
+    </div>
+    <nav>
+      <ul class="pagenavigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobiletitles">
+        <div class="dropdown">
+          <button class="dropbtn">&#9776;</button>
+            <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="temples.html">Temples</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+        <h1>TEMPLE INN AND SUITES</h1>
+        <img src="../images/icon.png" alt="Temple Icon">
+    </div>
+  </header>
+
+  <main>
+      <form class="reservations">
+        <h2>Reserve A Room</h2>
+        <label for="location">Location</label>
+        <input type="text" id="location" required><br>
+        <label for="date">Date</label>
+        <input type="date" id="date" required><br>
+        <label for="numberofrooms">Number of Rooms</label>
+        <input type="number" id="numberofrooms" required><br>
+        Type of Room<br>
+        <label for="normal">Standard</label>
+        Standard<input type="radio" id="normal" value="normal" checked required><br>
+        <label for="deluxe">Deluxe</label>
+        Deluxe<input type="radio" id="deluxe" value="deluxe" required><br>
+        <label for="suite">Suite</label>
+        Suite<input type="radio" id="suite" value="suite" required><br>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" required><br>
+        <label for="phonenumber">Phone Number</label>
+        <input type="tel" id="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <label for="state-country">State or Country</label>
+        <input type="text" id="state-country" required><br>
+        <label for="additional">Additional Accomodations / Comments</label><br>
+        <textarea id="additional">
+        </textarea><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+  </main>
+
+  <footer>
+    <div class="footerinfo">
+      <p id="footertitle">The Temple Inn and Suites 2019</p>
+      <p>4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20814</p><br>
+      <p>999-999-9999</p>
+      <p>thetempleinn@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
